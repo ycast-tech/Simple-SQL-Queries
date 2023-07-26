@@ -31,7 +31,7 @@ The output returns all the contents of the `machines` table:
 SELECT device_id, email_client
 FROM machines;
 ```
-<img src="images/secondquery.png" width=500>
+<img src="images/secondquery.png" width=800>
 
 3. Now, I need information on the operating systems used on various devices and their last patch date.<br>
 I need to query for `device_id`, `operating_system`, and `OS_patch_date` columns from the `machines` table.
@@ -40,7 +40,7 @@ I need to query for `device_id`, `operating_system`, and `OS_patch_date` columns
 SELECT device_id, operating_system, OS_patch_date
 FROM machines;
 ```
-<img src="images/thirdquery.png" width=500>
+<img src="images/thirdquery.png" width=800>
 
 
 
@@ -53,7 +53,7 @@ In this task, I to analyze the information from the `log_in_attempts` table to d
 SELECT event_id, country
 FROM log_in_attempts;
 ```
-<img src="images/fourthquery.png" width=500>
+<img src="images/fourthquery.png" width=800>
 
 >There are no login attempts made from any other country?
 
@@ -63,7 +63,7 @@ FROM log_in_attempts;
 SELECT username, login_date, login_time
 FROM log_in_attempts;
 ```
-<img src="images/fifthquery.png" width=500>
+<img src="images/fifthquery.png" width=800>
 
 
 
@@ -84,7 +84,7 @@ SELECT *
 FROM log_in_attempts
 ORDER BY login_date;
 ```
-<img src="images/seventhquery2.png" width=500>
+<img src="images/seventhquery2.png" width=800>
 
 2. Now, I need to further organize the previous results by ordering them by `login_time`.
 ```sql
@@ -93,4 +93,5 @@ FROM log_in_attempts
 ORDER BY login_date, login_time;
 ```
 <img src="images/seventhquery.png" width=800>
+
 ## Summary
