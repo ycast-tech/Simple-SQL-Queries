@@ -95,3 +95,10 @@ ORDER BY login_date, login_time;
 <img src="images/seventhquery.png" width=800>
 
 ## Summary
+I made this project to demonstrate I have practical experience in running basic SQL queries to: 
+
+- select specific columns from a table,
+- select all columns from a table by using an asterisk (*), and
+- sort query results using the ORDER BY keyword.
+
+These basic queries form the foundation for running more advanced queries and applying more complex filters later.
