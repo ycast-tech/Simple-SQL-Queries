@@ -23,7 +23,7 @@ FROM machines;
 
 The output returns all the contents of the `machines` table:
 
-<img src="images/firstquery.png" width=500>
+<img src="images/firstquery.png" width=800>
 
 2. I want to focus on the email client running on various devices. To do this, I need to query for `device_id` and `email_client` columns from the `machines` table.
 
@@ -57,7 +57,7 @@ FROM log_in_attempts;
 
 >There are no login attempts made from any other country?
 
-2. Next, I need to check if login attempts were made outside of the organization's working hours (09:00 - 17:00).
+2. Next, I need to check if login attempts were made outside of the organization's working hours.
 
 ```sql
 SELECT username, login_date, login_time
@@ -72,6 +72,7 @@ FROM log_in_attempts;
 SELECT *
 FROM log_in_attempts;
 ```
+<img src="images/sixthquery.png" width=800>
 ## Order login attempts data
 
 In this task, I need to use the `ORDER BY` keyword. I'll sequence the data that the query returns according to the login date and time.
@@ -83,7 +84,7 @@ SELECT *
 FROM log_in_attempts
 ORDER BY login_date;
 ```
-<img src="images/sixthquery.png" width=500>
+<img src="images/seventhquery2.png" width=500>
 
 2. Now, I need to further organize the previous results by ordering them by `login_time`.
 ```sql
@@ -91,5 +92,5 @@ SELECT *
 FROM log_in_attempts
 ORDER BY login_date, login_time;
 ```
-
+<img src="images/seventhquery.png" width=800>
 ## Summary
