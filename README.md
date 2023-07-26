@@ -23,7 +23,7 @@ FROM machines;
 
 The output returns all the contents of the `machines` table:
 
-<img src="images/selectreturn.png" width=500>
+<img src="images/firstquery.png" width=500>
 
 2. I want to focus on the email client running on various devices. To do this, I need to query for `device_id` and `email_client` columns from the `machines` table.
 
