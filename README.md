@@ -40,7 +40,7 @@ I need to query for `device_id`, `operating_system`, and `OS_patch_date` columns
 SELECT device_id, operating_system, OS_patch_date
 FROM machines;
 ```
-<img src="images/thirdquery" width=500>
+<img src="images/thirdquery.png" width=500>
 
 
 
@@ -48,23 +48,24 @@ FROM machines;
 In this task, I to analyze the information from the `log_in_attempts` table to determine if any unusual activity has occurred.
 
 1. First, I need to investigate the locations where login attempts were made to ensure that they’re in expected areas (the United States, Canada, or Mexico).
->Write a SQL query to select the event_id and country columns from the log_in_attempts table.
+
 ```sql
 SELECT event_id, country
 FROM log_in_attempts;
 ```
-<img src="images/forthquery.png" width=500>
->Were any login attempts made from Australia?
+<img src="images/fourthquery.png" width=500>
+
+>There are no login attempts made from any other country?
 
 2. Next, I need to check if login attempts were made outside of the organization's working hours (09:00 - 17:00).
->Write a SQL query that selects the username, login_date, and login_time columns from the log_in_attempts table.
+
 ```sql
 SELECT username, login_date, login_time
 FROM log_in_attempts;
 ```
 <img src="images/fifthquery.png" width=500>
 
-> What username is returned in the fifth row?
+
 
 3. Now, I need to get a complete picture of all login attempts.
 ```sql
